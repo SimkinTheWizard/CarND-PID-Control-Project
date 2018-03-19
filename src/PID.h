@@ -2,14 +2,15 @@
 #define PID_H
 
 class PID {
-public:
+private:
   /*
   * Errors
   */
   double p_error;
   double i_error;
   double d_error;
-
+  double sq_error;
+  int time_count;
   /*
   * Coefficients
   */ 
@@ -17,9 +18,11 @@ public:
   double Ki;
   double Kd;
 
+	
   /*
   * Constructor
   */
+public:
   PID();
 
   /*
@@ -41,6 +44,11 @@ public:
   * Calculate the total PID error.
   */
   double TotalError();
+	
+	/*
+	 * Calculate the total RMS error.
+	 */
+	double RmsError();
 };
 
 #endif /* PID_H */
