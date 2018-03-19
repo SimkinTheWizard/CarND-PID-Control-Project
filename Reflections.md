@@ -4,7 +4,7 @@
 This project aims to control the vehicle using a PID control algorithm. It includes an implementation and tuning of this control methods.
 
 ## Description of P, I, and D Parameters
-PID control algorithm is a feedback based algorithm that works well in many systems where control is necessary, and consists of three main parts. These are **P**roportional, **I**ntegral, and **D** differential components. These three components, together, compansate for the different parts of the impulse response of the controlled system.
+PID control algorithm is a feedback based algorithm that works well in many systems where control is necessary, and consists of three main parts. These are **P**roportional, **I**ntegral, and **D**ifferential components. These three components, together, compansate for the different parts of the impulse response of the controlled system.
 
 **Proportional** component is the main component of this algorithm. As the name suggests the response of this component is proportional to the instantaneous magnitude of the error. The problem with this component is when there is a delay in the system between actuation and output, as in most systems, the output will continue past the desired point and oscillate back and forth. In the project, this component is also the main factor that is steering the vehicle.
 
